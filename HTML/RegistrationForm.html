@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>登记页面</title>
+		<style type="text/css">
+		table {
+			background-color: rgba(134,134,134,0.3);
+		}
+		</style>
+	</head>
+	<body background="imgs/07.jpg">
+		<form action="" method="post">
+			
+			<h4 align="center">个人信息登记</h4>
+		<table align="center" width="600" border="1" style="border-collapse: collapse;">
+			<!-- 第一行 -->
+			<tr height="30">
+				<td>姓名</td>
+				<td>
+					<input type="text" />
+				</td>
+			</tr>
+			<!-- 第二行 -->
+			<tr height="30">
+				<td>性别</td>
+				<td>
+					<input type="radio" name="sex" id="nan" /> 男
+					<input type="radio" name="sex" id="nv" /> 女
+				</td>
+			</tr>
+			<!-- 第三行 -->
+			<tr height="30">
+				<td>生日</td>
+				<td><input type="date" /></td>
+			</tr>
+			<!-- 第四行 -->
+			<tr height="30">
+				<td>所在地区</td>
+				<td>
+					<select name="city" size="1">
+						<option>请选择城市</option>
+						<option value="bj">北京</option>
+						<option value="sh">上海</option>
+						<option value="sz">深圳</option>
+						<option value="lz">兰州</option>
+						<option value="xa">西安</option>
+						<option value="ww">武威</option>
+					</select>
+					<select name="DiQu" size="1">
+						<option>请选择地区</option>
+						<option value="bj">凉州区</option>
+						<option value="sh">古浪县</option>
+						<option value="sz">天祝/option>
+							<option value="lz">谢河</option>
+					</select>
+					<select name="DiQu" size="1">
+						<option>请选择镇具体街道</option>
+						<option value="bj">黄羊镇</option>
+						<option value="sh">青阳镇</option>
+						<option value="sz">谢河镇</option>
+					</select>
+					<input type="text" placeholder="输入具体地址" />
+				</td>
+			</tr>
+			<!-- 第五行 -->
+			<tr height="30">
+				<td>学历</td>
+				<td>
+					<select name="XueLi" size="1">
+						<option>请选择学历</option>
+						<option>小学</option>
+						<option>初中</option>
+						<option>高中</option>
+						<option>中专</option>
+						<option>大专</option>
+						<option>大学</option>
+					</select>
+				</td>
+			</tr>
+			<!-- 第六行 -->
+			<tr height="30">
+				<td>婚姻状况</td>
+				<td>
+					<input type="radio" name="marry" id="marry" />已婚
+					<input type="radio" name="marry" id="nomarry" />未婚
+				</td>
+			</tr>
+			<!-- 第七行 -->
+			<tr height="30">
+				<td>兴趣爱好</td>
+				<td>
+					<input type="checkbox" name="YunDon" id="YunDon" />运动
+					<input type="checkbox" name="KanShu" id="KanShu" />看书
+					<input type="checkbox" name="LvYou" id="LvYou" />旅游
+					<input type="checkbox" name="WanDianNao" id="WanDianNao" />玩电脑
+				</td>
+			</tr>
+			<!-- 第八行 -->
+			<tr height="30">
+				<td>自我介绍</td>
+				<td>
+					<textarea cols="70" rows="10" placeholder="请输入......"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="radio" checked="checked"/>我同意兰州理工大学协议
+				</td>
+			</tr>
+			<tr height="30px">
+				<td colspan="2" align="right">
+					<input type="submit" value="提交" />
+					<input type="reset" value="重置" />
+				</td>
+			</tr>
+		</form>
+		
+	</body>
+
+</html>

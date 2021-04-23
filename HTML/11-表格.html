@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表格</title>
+	</head>
+	<!-- 
+	    表格
+		    table   表示表格
+			     常用属性：
+			        border   表格边框
+			     	width    表格宽度
+			     	style    设置边框
+			     	align    表格对齐方式
+			tr      表示表格中的行
+			    常用属性：
+			        align    每行中左右中内容对齐方式
+					valign   上下对齐
+					bgcolor  行背景颜色
+			td      表示表格中的单元格
+			    常用属性：
+			       colspan   横向合并
+				   rowspan   纵向合并
+			th      表示表格中的表头单元格（具有标题效果）
+			        
+	 -->
+	<body>
+		<table border="1" width="500px" style="border-collapse: collapse;" align="center">
+			<tr>
+				<th>班级</th>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+			<tr align="center" bgcolor="aquamarine">
+				<td>1 班</td>
+				<td>张三</td>
+				<td>19</td>
+				<td>男</td>
+			</tr>
+			<tr align="center" bgcolor="antiquewhite">
+				<td>1 班</td>
+				<td>李四</td>
+				<td>19</td>
+				<td>女</td>
+			</tr>
+			<tr align="center" bgcolor="aqua">
+				<td>2 班</td>
+				<td>王麻子</td>
+				<td>19</td>
+				<td>男</td>
+			</tr>
+		</table>
+
+		<hr size="3">
+
+		<h3 align="center">纵向合并 rowspan</h3>
+		<table border="1" width="500px" style="border-collapse: collapse;" align="center">
+			<tr>
+				<th>班级</th>
+				<th>姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+			<tr align="center" bgcolor="aquamarine">
+				<td rowspan="2">1 班</td>
+				<td>张三</td>
+				<td>19</td>
+				<td>男</td>
+			</tr>
+			<tr align="center" bgcolor="antiquewhite">
+				<td>李四</td>
+				<td>19</td>
+				<td>女</td>
+			</tr>
+			<tr align="center" bgcolor="aqua">
+				<td>2 班</td>
+				<td>王麻子</td>
+				<td>19</td>
+				<td>男</td>
+			</tr>
+		</table>
+
+		<hr size="3">
+
+		<h3 align="center">横向合并 colspan</h3>
+		<table border="1" width="500px" style="border-collapse: collapse;" align="center">
+			<tr>
+				<th colspan="2">班级+姓名</th>
+				<th>年龄</th>
+				<th>性别</th>
+			</tr>
+			<tr align="center" bgcolor="aquamarine">
+				<td>1 班</td>
+				<td>张三</td>
+				<td>19</td>
+				<td>男</td>
+			</tr>
+			<tr align="center" bgcolor="antiquewhite">
+				<td>1班</td>
+				<td>李四</td>
+				<td>19</td>
+				<td>女</td>
+			</tr>
+			<tr align="center" bgcolor="aqua">
+				<td>2 班</td>
+				<td>王麻子</td>
+				<td>19</td>
+				<td>男</td>
+			</tr>
+		</table>
+		<hr size="3">
+	</body>
+</html>

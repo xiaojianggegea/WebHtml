@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>select标签</title>
+	</head>
+	<!-- 
+	    select标签下拉框标签
+		     常用属性：
+			     multiple  设置下拉框可多选
+				 size      设置下拉框可见选项数
+				 disabled  禁用元素
+		option下拉框的选项标签
+		     常用属性：
+			     selected  默认选中项
+		         value     提交给服务器的选项值
+				 disabled  禁用某个选项
+	 -->
+	<body>
+		<select name="city">
+			<option>请选择城市</option>
+			<option value="bj">北京</option>
+			<option value="sh">上海</option>
+			<option value="sz">深圳</option>
+		</select>
+		<hr>
+		<select name="city" multiple="multiple" size="2">
+			<option>请选择城市</option>
+			<option value="bj">北京</option>
+			<option value="sh">上海</option>
+			<option value="sz">深圳</option>
+			<option value="lz">兰州</option>
+			<option value="xa">西安</option>
+			<option value="xj">新疆</option>
+		</select>
+		<hr>
+		<select name="city">
+			<option selected="selected">北京</option>
+			<option value="sh">上海</option>
+			<option value="sz">深圳</option>
+
+		</select>
+	</body>
+</html>
